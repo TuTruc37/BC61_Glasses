@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#content {
+  background-image: url(./glassesImage/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+#content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+#content h1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+#content .img_content {
+  position: relative;
+  background-color: white;
+  padding: 90px;
+}
+#content .imgClasses_right,
+#content .imgClasses_left {
+  background-image: url(./glassesImage/model.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 5;
+  padding: 7rem 6rem;
+  margin: 3rem;
+  position: relative;
+}
+#content .imgClasses_right img {
+  position: absolute;
+  top: 58px;
+  left: 39px;
+  width: 60%;
+}
+#content .imgLayout {
+  position: absolute;
+  background: rgba(174, 118, 43, 0.47);
+  width: 100%;
+  right: 0px;
+  bottom: 0;
+}
